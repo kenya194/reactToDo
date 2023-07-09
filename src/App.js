@@ -1,5 +1,5 @@
 
-// import './App.css';
+import './index.css';
 import Navbar from "./navbar";
 import Header from "./header";
 import Section from "./section";
