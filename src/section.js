@@ -2,6 +2,10 @@ const Section = () => {
     return ( 
         <div>
             <h2>Add Todo</h2>
+            <form>
+                <h4>What is on your mind...</h4>
+                <input type='text' id='content' placeholder="eg. Pack up your bags"></input> 
+            </form>
         </div>
      );
 }
