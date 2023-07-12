@@ -9,12 +9,13 @@ const Category = () => {
             </label>
 
 
-
             <label>
                 <input type="radio" id="category2" value='personal'></input>
                 <span className="bubble Personal"></span>
                 <div>Personal</div>
             </label>
+
+            <input type="submit" value='Add Todo'></input>
         </div>
      );
 }

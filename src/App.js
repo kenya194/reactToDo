@@ -3,7 +3,6 @@ import './index.css';
 import Navbar from "./navbar";
 import Header from "./header";
 import Section from "./section";
-import Category from './category';
 
 function App() {
  
@@ -17,7 +16,6 @@ function App() {
     </div>
     <div>
       <Section />
-      <Category />
     </div>
 
   </div>
