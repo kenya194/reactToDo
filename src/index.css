@@ -17,7 +17,7 @@
 .greetings{
   background-color: black;
   padding: 50;
-
+  align-items: center;
 }
 .greetings h1{
   color: aliceblue;
@@ -37,6 +37,7 @@ input{
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 1.5rem;
         grid-gap: 1.5rem;
+/*splitting the options into columns */
 }
 
 .options .split{
@@ -49,4 +50,22 @@ input{
       border-radius: 0.5rem;
         box-shadow: var(--shadow);
         cursor: pointer;
+ /*same splitting */
+}
+ 
+.takingInput h2 {
+  padding: 1.3rem;
+  color: aliceblue;
+  font-size: 2rem;
+}
+
+.takingInput h4{
+  color: aliceblue;
+  padding: 1rem;
+}
+
+.takingInput{
+  background-color: black;
+  text-align: center;
+
 }

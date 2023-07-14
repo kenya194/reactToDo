@@ -3,7 +3,7 @@ import Lists from "./lists";
 const Category = () => {
     return ( 
         <div>
-            <h2>Select a Category</h2>
+            <h2 className="category-head">Select a Category</h2>
 
             <div className="options">
             <label className="split">
