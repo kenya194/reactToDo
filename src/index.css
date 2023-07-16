@@ -52,6 +52,15 @@ input{
         cursor: pointer;
  /*same splitting */
 }
+
+input{
+    color: black;
+      /* border and padding - gives curvy edges*/
+      border-radius: 8px;
+      padding: 10px 26px;
+      width: 60%;
+      outline: 0;
+}
  
 .takingInput h2 {
   padding: 1.3rem;
@@ -67,5 +76,8 @@ input{
 .takingInput{
   background-color: black;
   text-align: center;
-
+}
+.todoInput{
+        width: 100%;
+        font-size: 1.5rem;
 }
