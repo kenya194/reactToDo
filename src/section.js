@@ -2,17 +2,17 @@ import Category from "./category";
 
 const Section = () => {
 
-    let todoInfo = localStorage.getItem(" ");
-    let todoInput = document.querySelector("#content")
-    todoInput.value = todoInfo;
+    // let todoInfo = localStorage.getItem("todoData");
+    // let todoInput = document.querySelector("#content")
+    // todoInput.value = todoInfo;
 
-    todoInput.addEventListener('change', e => {
-        localStorage.setItem(' ', e.target.value )
-    })
+    // todoInput.addEventListener('change', e => {
+    //     localStorage.setItem('todoData', e.target.value )
+    // })
 
 
 
-    return ( 
+    return (  
         <div className="takingInput">
             <h2>Add Todo</h2>
             <form className="todoInput">
