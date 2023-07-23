@@ -1,11 +1,14 @@
 function Header() {
 
     let username = localStorage.getItem(" ")
+    //getting the input value
     let nameInput = document.querySelector("#name")
     nameInput.value = username;
+    //letting the username be equal to the input value
 
     nameInput.addEventListener('change', e => {
         localStorage.setItem('', e.target.value)
+        // local storage set the name according to the values inputted.
     })
     
     return (
