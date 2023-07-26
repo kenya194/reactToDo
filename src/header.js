@@ -6,6 +6,8 @@ function Header() {
     const nameChange = (event) => {
         setInput(event.target.value);
     };
+    localStorage.setItem('Name', inputValue);
+    localStorage.getItem('Name')
 
     return (
         <div className="greetings">
