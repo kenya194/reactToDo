@@ -1,6 +1,17 @@
 import Category from "./category";
+import { useState } from "react";
 
 const Section = () => {
+
+const[yourTodo, setTodo] = useState("");
+
+
+
+
+
+
+
+
     return ( 
         <div className="takingInput">
             <h2>Add Todo</h2>
