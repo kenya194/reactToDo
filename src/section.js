@@ -1,17 +1,20 @@
 import Category from "./category";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Section = () => {
 
-const[yourTodo, setTodo] = useState("");
+const[yourTodo, setTodo] = useState( () => {
+    const todo = localStorage.getItem('inputtedTodo')
+    return todo;
+});
 
 const inputValue = (e) =>{
     setTodo(e.target.inputValue)
 }
 
-
-
-
+useEffect (()=>{
+        localStorage.setItem('inputtedTodo', yourTodo);
+    }, [yourTodo]);
 
 
 
