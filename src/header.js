@@ -12,7 +12,7 @@ function Header() {
     };
         // this takes the input while being typed and sets it as the new input.
     useEffect (()=>{
-        localStorage.setItem('Name', inputValue);
+        localStorage.setItem('Name', inputValue)
     }, [inputValue]);
         // the useEffect runs the set item outside the main functions and stores its value 
 
