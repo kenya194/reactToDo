@@ -1,20 +1,18 @@
 import Category from "./category";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-const Section = () => {
+const Section = ({addtodo}) => {
 
-const[yourTodo, setTodo] = useState( () => {
-    const todo = localStorage.getItem('inputtedTodo')
-    return todo || '';
-});
+const[yourTodo, setTodo] = useState("");
 
-const inputValue = (e) =>{
+const handleInputValue = (e) =>{
     setTodo(e.target.value)
 }
 
-useEffect (()=>{
-        localStorage.setItem('inputtedTodo', yourTodo)
-    }, [yourTodo]);
+const handleAddingTodo = () => {
+    addtodo(yourTodo);
+    setTodo("");
+}
 
 
 
@@ -23,15 +21,19 @@ useEffect (()=>{
         <div className="takingInput">
             <h2>Add Todo</h2>
             <form className="todoInput">
+                
                 <h4>What is on your mind...</h4>
+
                 <input type='text'
                  id='content'
                   placeholder="eg. Pack up your bags"
-                   onChange={inputValue} 
+                   onChange={handleInputValue} 
                    value={yourTodo}>
                     </input> 
             </form>
             <Category />
+
+            <button onClick={handleAddingTodo}> Add Todo</button>
         </div>
      );
 }
