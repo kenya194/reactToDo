@@ -1,4 +1,4 @@
-import Lists from "./lists";
+// import Lists from "./lists";
 import React, {useState} from "react";
 
 const Category = () => {
@@ -40,8 +40,8 @@ const Category = () => {
             </label>
             </div>
 
-            <input type="submit" value='Add Todo'></input>
-            <Lists />
+            {/* <input type="submit" value='Add Todo'></input> */}
+            
         </div>
      );
 }

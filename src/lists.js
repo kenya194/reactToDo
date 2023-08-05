@@ -8,11 +8,11 @@ const Lists = ({todos}) => {
 
             <h2>Your Added Todos</h2> 
 
-        {/* <ul>
+        <ul>
             {todos.map ((todo, index) => 
             <li key={index}> {todo}
             </li>)}
-        </ul> */}
+        </ul>
         </div>
      );
 }

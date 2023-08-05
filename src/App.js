@@ -26,6 +26,7 @@ function App() {
       <Section addTodo={addTodo}/>
     </div>
 
+
     <div>
       <Lists todos = {todos}/>
     </div>
