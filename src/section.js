@@ -33,7 +33,7 @@ const handleAddingTodo = () => {
             </form>
             <Category />
 
-            <button onClick={handleAddingTodo}> Add Todo</button>
+            <input type="submit" onClick={handleAddingTodo} value= "Add Todo"></input>
         </div>
      );
 }
