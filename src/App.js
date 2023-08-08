@@ -9,26 +9,28 @@ function App() {
   const [todos, setTodo] = useState([]);
 
   const addTodo = (newTodo)=>{
-      setTodo(...todos, newTodo);
+    let Todos = todos
+    Todos.push(newTodo)
+    setTodo(Todos)
   }
+
 
   return (
   <div className="APP">
     <div className="nav">
-    <Navbar />
+    {/* <Navbar /> */}
     </div>
 
     <div className="head">
-    <Header />
+    {/* <Header /> */}
     </div>
 
     <div>
-      <Section addTodo={addTodo}/>
+      <Section addTodo={(todo)=>addTodo(todo)}/>
     </div>
 
-
     <div>
-      <Lists todos = {todos}/>
+      <Lists todos={todos}/>
     </div>
   </div>
   );

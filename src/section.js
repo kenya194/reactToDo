@@ -1,39 +1,30 @@
 import Category from "./category";
 import { useState } from "react";
 
-const Section = ({addtodo}) => {
+const Section = ({addTodo}) => {
 
-const[yourTodo, setTodo] = useState("");
-
-const handleInputValue = (e) =>{
-    setTodo(e.target.value)
-}
-
-const handleAddingTodo = () => {
-    addtodo(yourTodo);
-    setTodo("");
-}
-
-
-
-
+    const[yourTodo, setTodo] = useState("");
+    const submit = (e)=>{
+        e.preventDefault()
+        addTodo(yourTodo)
+    }
     return ( 
         <div className="takingInput">
             <h2>Add Todo</h2>
-            <form className="todoInput">
+            <form onSubmit={submit} className="todoInput">
                 
-                <h4>What is on your mind...</h4>
+                <h4>What is on your mind... </h4>
 
                 <input type='text'
                  id='content'
                   placeholder="eg. Pack up your bags"
-                   onChange={handleInputValue} 
+                   onChange={(e)=>setTodo(e.target.value)} 
                    value={yourTodo}>
                     </input> 
+                 <input type="submit" value= "Add Todo"></input>
             </form>
-            <Category />
+            {/* <Category /> */}
 
-            <input type="submit" onClick={handleAddingTodo} value= "Add Todo"></input>
         </div>
      );
 }
